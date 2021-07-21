@@ -32,10 +32,10 @@ section h2 {
 }
 
 
-.ingredients li {
+.ingredients li, .directions ul li {
     list-style-type: none;
 }
-.ingredients li::before, .directions li::before {
+.ingredients li::before, .directions ul li::before {
     content: url(img/pie_icon.gif);
     margin-right: 8px;
 }
