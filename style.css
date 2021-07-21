@@ -11,15 +11,6 @@ body {
     
     
 }
-/* html,body{
-    height: 100%;
-    
-}
-
-#wrapper {
-    min-height: 100%;
-    position: relative;
-} */
 header {
     background-color: #2f3030;
     
@@ -67,6 +58,13 @@ section div.assignment-list {
     padding-left: 50px;
     font-size: 1rem;
     font-weight: 100;
+}
+.assignment-list a {
+    text-decoration: none;
+    color: #fff;
+}
+.assignment-list a:hover {
+    text-decoration: underline;
 }
 
 footer{
