@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(38 79 63);
+    color: #f39604;
+}
+.wrapper {
+    width: 900px;
+    height: auto;
+    margin: auto;
+    background-color: #2f3030;
+    padding: 10px;
+}
+
+h1,h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+p{
+    font-weight: 700;
+    font-size: 1em;
+}
+
+/* drop-caps */
+p::first-letter {
+    font-size: 1.5em;
+}
+header h1 {
+    font-size: 3.2rem;
+}
+
+header p {
+    word-spacing: 0.3rem;
+}
+
+section h1 {
+    font-size: 1.8rem;
+}
+
+
+.my-fav-movies p {
+    font-style: italic;
+}
+.my-fav-movies dt, header p, .about-my-neighbours p  {
+    color: #ffc8be;
+}
+.about-my-neighbours p {
+    padding-left: 20px;
+}
+
+.my-class-list li {
+    margin-top: 10px;
+    font-weight:lighter;
+}
+.my-class-list abbr {
+    text-decoration: none;
+}
+
+
+.IMDB a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* links underlined under hover */
+.IMDB a:hover {
+    text-decoration: underline;
+    
+}
+
+.my-moods img {
+    width: 200px;
+    height: 200px;
+}
+
+.my-moods div{
+    
+    display: inline-block;
+    margin-right: 25%;
+}
+.my-moods p {
+    text-align: center;
+}
+footer {
+    padding-top: 20px;
+    text-align: center;
+    font-size: small;
+    letter-spacing: 0.2rem;
+}
+
