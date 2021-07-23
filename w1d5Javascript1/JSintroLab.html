@@ -74,14 +74,14 @@
         console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(4, maxOfThree(55, 4, 44)));
         
         /* assignment */
-        console.log("Expected output of checkVowel('C') is false "+ myFunctionTest(false, checkVowel("C")));
+        console.log("Expected output of checkVowel('A') is true "+ myFunctionTest(true, checkVowel("A")));
         console.log("Expected output of sum([1,2,3,4]) is 10 "+ myFunctionTest(10, sum([1,2,3,4])));
         console.log("Expected output of multiply([1,2,3,4]) is 24 "+ myFunctionTest(24, multiply([1,2,3,4])));
         console.log("Expected output of strReverse('Apple') is elppA "+ myFunctionTest("elppA", strReverse("Apple")));
         console.log("Expected output of findLongestWord(['Star','Country','Computer','Encyclopedia'])  is 12 "+ myFunctionTest(12, findLongestWord(['Star','Country','Computer','Encyclopedia'])));
         console.log("Expected output of filterLongWords(['Star','Country','Computer','Encyclopedia'], 7)  is ['Computer', 'Encyclopedia'] "+ myFunctionTest(JSON.stringify(['Computer', 'Encyclopedia']), JSON.stringify(filterLongWords(['Star','Country','Computer','Encyclopedia'], 7))));
 
-        console.assert(checkVowel("C"), "Expected output of checkVowel('C') is false ");
+        console.assert(checkVowel("A"), "Expected output of checkVowel('A') is true ");
         console.assert(10 === sum([1,2,3,4]),"Expected output of sum([1,2,3,4]) is 10 ");
         console.assert(24 === multiply([1,2,3,4]),"Expected output of multiply([1,2,3,4]) is 24");
         console.assert("elppA" === strReverse("Apple"), "Expected output of strReverse('Apple') is elppA ");
