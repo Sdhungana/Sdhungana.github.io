@@ -1,0 +1,13 @@
+.column1,.column2,.column3 {
+    height: 350px;
+}
+.footer {
+    height: 60px;
+    line-height: 60px;
+}
+
+.html-css-validation-block{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
