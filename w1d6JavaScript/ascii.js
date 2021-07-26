@@ -50,24 +50,36 @@ function callOnWindowLoad() {
   }
 
   function animationFunc() {
-    let animationArr = ANIMATIONS[`${animationType}`].split("=====\n");
-    const animationFrameCount = animationArr.length;
-    textArea.value = animationArr[currentFrame];
-    currentFrame = currentFrame == animationFrameCount - 1 ? 0 : ++currentFrame;
+    if (animationType) {
+      let animationArr = ANIMATIONS[`${animationType}`].split("=====\n");
+      const animationFrameCount = animationArr.length;
+      textArea.value = animationArr[currentFrame];
+      currentFrame =
+        currentFrame == animationFrameCount - 1 ? 0 : ++currentFrame;
+    }
   }
 
   function stopAnimation() {
     clearInterval(animationTimerID);
+    animationTimerID = undefined;
     textArea.value = "";
     startBtn.disabled = false;
     stopBtn.disabled = true;
     animationBtn.disabled = false;
+    turboBtn.checked = false;
+    animationType = undefined;
+    animationBtn[0].selected = true; // first option in animationBtn select box
+    fontsizeBtn[2].selected = true; //  third option in fontsizeBtn select box
   }
 
   function setUnsetTurbo() {
-    clearInterval(animationTimerID);
     frameSpeed = turboBtn.checked ? 50 : 250; // turbo frame speed is 50 ms
-    animationTimerID = setInterval(animationFunc, `${frameSpeed}`);
+    console.log(animationTimerID);
+    if (animationTimerID) {
+      clearInterval(animationTimerID);
+      animationTimerID = setInterval(animationFunc, `${frameSpeed}`);
+      console.log(frameSpeed);
+    }
   }
 
   function setTextSize(e) {
