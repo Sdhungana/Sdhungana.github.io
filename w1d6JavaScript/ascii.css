@@ -45,3 +45,7 @@ select{
     right:0px;
     position: fixed;
 }
+#validate a:last-child img{
+    width: 88px;
+    height: 31px;
+}
