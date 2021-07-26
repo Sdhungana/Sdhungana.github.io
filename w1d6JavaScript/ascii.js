@@ -3,6 +3,9 @@ import ANIMATIONS from "./animations.js";
 window.onload = () => callOnWindowLoad();
 
 function callOnWindowLoad() {
+
+  "use strict";
+
   const startBtn = document.getElementById("start");
   const stopBtn = document.getElementById("stop");
   const animationBtn = document.getElementById("animation");
@@ -34,7 +37,7 @@ function callOnWindowLoad() {
     animationType = this.value;
   }
 
-  let animationTimerID = undefined;
+  let animationTimerID;
   let frameSpeed = 250; // default frame speed
   let currentFrame = 0;
 
