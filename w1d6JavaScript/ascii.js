@@ -74,11 +74,9 @@ function callOnWindowLoad() {
 
   function setUnsetTurbo() {
     frameSpeed = turboBtn.checked ? 50 : 250; // turbo frame speed is 50 ms
-    // console.log(animationTimerID);
     if (animationTimerID) {
       clearInterval(animationTimerID);
       animationTimerID = setInterval(animationFunc, `${frameSpeed}`);
-      console.log(frameSpeed);
     }
   }
 
