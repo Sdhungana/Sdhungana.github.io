@@ -6,8 +6,6 @@ window.onload = () => {
 };
 
 function callOnWindowLoad() {
-  "use strict";
-
   const startBtn = document.getElementById("start");
   const stopBtn = document.getElementById("stop");
   const animationBtn = document.getElementById("animation");
