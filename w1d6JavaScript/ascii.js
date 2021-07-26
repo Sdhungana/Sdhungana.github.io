@@ -1,9 +1,11 @@
 import ANIMATIONS from "./animations.js";
 
-window.onload = () => callOnWindowLoad();
+window.onload = () => {
+  "use strict";
+  callOnWindowLoad();
+};
 
 function callOnWindowLoad() {
-
   "use strict";
 
   const startBtn = document.getElementById("start");
@@ -33,8 +35,8 @@ function callOnWindowLoad() {
 
   let animationType = animationBtn.value; // default animation type is Blank
 
-  function setAnimationType() {
-    animationType = this.value;
+  function setAnimationType(e) {
+    animationType = e.target.value;
   }
 
   let animationTimerID;
@@ -69,7 +71,7 @@ function callOnWindowLoad() {
     animationTimerID = setInterval(animationFunc, `${frameSpeed}`);
   }
 
-  function setTextSize() {
-    textArea.style.fontSize = `${this.value}`;
+  function setTextSize(e) {
+    textArea.style.fontSize = `${e.target.value}`;
   }
 }
