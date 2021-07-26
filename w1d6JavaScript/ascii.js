@@ -35,6 +35,7 @@ function callOnWindowLoad() {
   let animationType = animationBtn.value; // default animation type is Blank
 
   function setAnimationType(e) {
+    textArea.value = ANIMATIONS[e.target.value];
     animationType = e.target.value;
   }
 
@@ -62,12 +63,9 @@ function callOnWindowLoad() {
   function stopAnimation() {
     clearInterval(animationTimerID);
     animationTimerID = undefined;
-    textArea.value = "";
     startBtn.disabled = false;
     stopBtn.disabled = true;
     animationBtn.disabled = false;
-    turboBtn.checked = false;
-    animationType = undefined;
     animationBtn[0].selected = true; // first option in animationBtn select box
     fontsizeBtn[2].selected = true; //  third option in fontsizeBtn select box
   }
