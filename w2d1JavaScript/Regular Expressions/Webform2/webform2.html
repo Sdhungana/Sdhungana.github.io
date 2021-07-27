@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <title>WebForm2</title>
+  </head>
+  <body>
+   <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg my-navbar-style">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">MIU Golden Dome Market : : : SRM System</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <span class="nav-link">|</span>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Product</a>
+                      </li>
+                      <span class="nav-link">|</span>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Suppliers</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                        <span class="input-group-text border-0">Hello!</span>
+                      <button class="btn bg-light" type="submit">Sign Out</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <form class="row">
+            <h3 class="form-title">New Product Form</h3>
+            <div class="col-md-5 offset-md-1 mt-3">
+                    <div class="mb-3">
+                      <label for="productNo" class="form-label">Product Number</label>
+                      <input type="productNo" class="form-control" id="productNo"  required >
+                    </div>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="unitPrice" class="form-label">Unit Price</label>
+                        <input type="text" class="form-control" placeholder="0.0" id="unitPrice"  required>
+                      </div>
+                 
+            </div>
+            <div class="col-md-5 mt-3">
+                <div class="mb-3">
+                    <label for="qtyStock" class="form-label">Quantity in Stock</label>
+                    <input type="qtyStock" class="form-control" placeholder="0" id="qtyStock"  required >
+                  </div>
+                  <div class="mb-3">
+                    <label for="supplier" class="form-label">Supplier</label>
+                    <select id="supplier" class="form-select">
+                      <option selected>Select a supplier</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="dateSupplied" class="form-label">Date Supplied</label>
+                      <input type="text" class="form-control" placeholder="yyyy-mm-dd" id="dateSupplied"  required>
+                      <div id="dateSupplied-error-msg" class="form-text text-mute dateSupplied-error-msg">Enter a valid date</div>
+                    </div>
+                  
+                  <div class="btn-group btns">
+                    <button type="submit" class="btn btn-outline-secondary">Reset</button>
+                    <button type="submit" class="btn btn-outline-danger mr-2">Cancel</button>
+                    <button type="submit" class="btn btn-outline-primary">Add Product</button>
+                  </div>
+               
+          </div>
+        </form>
+        
+        </div>
+   </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

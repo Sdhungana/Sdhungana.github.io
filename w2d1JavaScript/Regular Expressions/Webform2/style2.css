@@ -1,0 +1,19 @@
+
+.my-navbar-style, .d-flex span  {
+    background-color: #69a3d4;
+   
+}
+.my-navbar-style a, span.nav-link , .d-flex span {
+    color: #fff;
+}
+
+.btns button{
+    margin-right: 20px;
+ 
+}
+
+
+.form-title{
+    font-size: 30px;
+    padding-left: 120px;
+}
