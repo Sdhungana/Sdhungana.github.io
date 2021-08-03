@@ -15,8 +15,7 @@ describe('Test', () => {
        describe('addInterest', () => {
            it('should add interest and return current balance', () => {
                s1.deposit(100);
-                assert.equal(s1.addInterest(),112);
-                console.log(s1.endOfMonth())
+                assert.equal(s1.addInterest(), 112);
            })
        });
        describe("endOfMonth", function () {
