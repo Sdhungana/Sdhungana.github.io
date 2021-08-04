@@ -22,7 +22,7 @@ describe('Test', () => {
         it("Prints details of savings account", function () {
             assert.equal(
               s1.endOfMonth(),
-              "Interest added SavingsAccount 10001: balance: 125.44 interest: 12"
+              "Interest added SavingsAccount 10001: balance: 140.4928 interest: 12"
             );
         });
     });
