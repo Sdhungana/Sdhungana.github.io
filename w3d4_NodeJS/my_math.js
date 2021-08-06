@@ -7,5 +7,5 @@ module.exports = {
   subtract,
   multiply,
   divide,
-  PI: 3.14,
+  pi: Math.PI,
 };
