@@ -1,19 +1,11 @@
-function add(x,y) {
-    return x+y;
-}
-function subtract(x, y) {
-    return x-y;
-}
-function multiply(x, y) {
-    return x*y;
-}
-function divide(x, y) {
-    return x/y;
-}
+let add = (x, y) => x + y;
+let subtract = (x, y) => x - y;
+let multiply = (x, y) => x * y;
+let divide = (x, y) => x / y;
 module.exports = {
-    add,
-    subtract,
-    multiply,
-    divide,
-    'pi': 3.14
-}
+  add,
+  subtract,
+  multiply,
+  divide,
+  pi: 3.14,
+};
