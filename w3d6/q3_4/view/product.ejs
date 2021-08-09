@@ -9,7 +9,10 @@
           <p class="card-text">ID: <%= products[i].id %></p>
           <p class="card-text"> Price: $<%= products[i].price %></p>
           <p class="card-text"> Product_Desc:<br> <%= products[i].desc %></p>
-          <a href="/addToCart/<%= products[i].id %>" class="btn btn-primary">Add To Cart</a>
+          <form action="/addToCart" method="POST">
+            <input type="hidden" name="id" value=" <%=products[i].id %>"/> 
+            <input type="submit" class="btn btn-primary" value="Add to Cart"/>
+        </form>
         </div>
       </div>
     </div>
