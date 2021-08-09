@@ -1,0 +1,19 @@
+<%- include('header.ejs') %>
+
+    <h3 class="text-center ">List of Products</h3>
+    <% for( let i in products) { %>
+    <div class="col-sm-6 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> Product_Name: <%= products[i].product_name %></h5>
+          <p class="card-text">ID: <%= products[i].id %></p>
+          <p class="card-text"> Price: $<%= products[i].price %></p>
+          <p class="card-text"> Product_Desc:<br> <%= products[i].desc %></p>
+          <a href="/addToCart/<%= products[i].id %>" class="btn btn-primary">Add To Cart</a>
+        </div>
+      </div>
+    </div>
+    <% } %>
+ 
+
+<%- include('footer.ejs') %>

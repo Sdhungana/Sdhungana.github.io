@@ -1,0 +1,44 @@
+<%- include('header.ejs') %>
+
+<div class="row">
+    <div class="cart_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="cart_container">
+                        <div class="cart_title">Shopping Cart<small> (<%=cartItems.length %> items in your cart) </small></div>
+                        <div class="cart_items">
+                            <ul class="cart_list">
+                                <% for( let i in cartItems) { %>
+                                <li class="cart_item clearfix">
+                                    <div class="cart_item_info d-flex flex-md-row flex-column justify-content-between">
+                                        <div class="cart_item_name cart_info_col">
+                                            <div class="cart_item_title">Name</div>
+                                            <div class="cart_item_text"><%= cartItems[i].product_name %></div>
+                                        </div>                                 
+                                        <div class="cart_item_quantity cart_info_col">
+                                            <div class="cart_item_title">Quantity</div>
+                                            <div class="cart_item_text"><%= cartItems[i].qty %></div>
+                                        </div>
+                                        <div class="cart_item_price cart_info_col">
+                                            <div class="cart_item_title">Price</div>
+                                            <div class="cart_item_text">$<%= cartItems[i].price %></div>
+                                        </div>
+                                        <div class="cart_item_total cart_info_col">
+                                            <div class="cart_item_title">Total</div>
+                                            <div class="cart_item_text">N/A</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            
+                            <% } %>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('footer.ejs') %>
